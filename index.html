@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercice 9</title>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+        <!--Partie bleue-->
+        <p>
+            <span id="votreidentite">Votre identité</span>
+            <div class="partiebleue">
+                1. Nom : <input type="text" name="identite" placeholder="Nom"/><br/>
+                2. Prénom : <input type="text" name="identite" placeholder="Prénom"/><br/>
+                3. Adresse mail : <input type="email" name="identite" placeholder="Adresse mail"/><br/>
+            </div>
+        </p> 
+        <!--Partie violette-->
+        <p>
+            <span id="adressedelivraison">Adresse de livraison</span>
+            <div class="partieviolette">
+                1. Adresse : <textarea name="adresse" rows="5" cols="15"></textarea><br/>
+                2. Code postal : <input type="text" name="adresse" placeholder="Code Postal"/><br/>
+                3. Ville : <input type="text" name="adresse" placeholder="Ville"/><br/>
+            </div>
+        </p>
+        <!--Partie rose-->
+        <p>
+            <span id="infodereglement">Informations de réglement</span>
+            <div class="partierose">
+                1. Type de carte bancaire :<br/>
+                <input type="radio" name="carte" value="visa" class="visa"/><label for="visa">VISA</label><br/>
+                <input type="radio" name="carte" value="mastercard" class="mastercard"/><label for="mastercard">Mastercard</label><br/>
+                2. Numéro de carte : <input type="text" name="carte" placeholder="Numéro de carte"/><br/>
+                3. Code de sécurité : <input type="text" name="carte" placeholder="Code de sécurité"/><br/>
+                4. Nom du titulaire : <input type="text" name="carte" placeholder="Nom du titulaire"/><br/>
+            </div>
+        </p>
+        <!--Bouton d'achat-->
+        <p>
+            <input type="submit" class="bouton" value="J'achète!"/>
+        </p>
+    </body>
+</html>

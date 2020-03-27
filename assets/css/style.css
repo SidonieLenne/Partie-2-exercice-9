@@ -1,0 +1,68 @@
+/*Partie bleue*/
+#votreidentite{
+    position:absolute; z-index:1;
+    margin-left:20px;
+    background-color:#2474a9;
+}
+
+.partiebleue{
+    position:absolute;
+    width: 95%;
+    height:100px;
+    margin-top:10px;
+    margin-left:5px;
+    border-top:3px solid grey;
+    border-left:3px solid whitesmoke;
+    padding-top:40px;
+    padding-left:40px;
+    background-color:#2474a9;
+}
+/*Partie violette*/
+#adressedelivraison{
+    position:absolute; z-index:1;
+    margin-top:155px;
+    margin-left:20px;
+    background-color:#9a12b4;
+}
+
+.partieviolette{
+    position:absolute;
+    width:95%;
+    height:150px;
+    margin-top: 165px;
+    margin-left:5px;
+    border-top:3px solid grey;
+    border-left:3px solid whitesmoke;
+    padding-top:40px;
+    padding-left:40px;
+    background-color:#9a12b4;
+}
+/*Partie rose*/
+#infodereglement{
+    position:absolute; z-index:1;
+    margin-top:360px;
+    margin-left:20px;
+    background-color:#db0a5b;
+}
+
+.visa, .mastercard{
+    margin-left:50px;
+}
+
+.partierose{
+    position:absolute;
+    width:95%;
+    height:150px;
+    margin-top:370px;
+    margin-left:5px;
+    border-top:3px solid grey;
+    border-left:3px solid whitesmoke;
+    padding-top:40px;
+    padding-left:40px;
+    background-color:#db0a5b;
+}
+/*Bouton d'achat*/
+.bouton{
+    margin-top:565px;
+    margin-left:5px;
+}
