@@ -6,39 +6,39 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-        <!--Partie bleue-->
-        <p>
-            <span id="votreidentite">Votre identité</span>
-            <div class="partiebleue">
-                1. Nom : <input type="text" name="identite" placeholder="Nom"/><br/>
-                2. Prénom : <input type="text" name="identite" placeholder="Prénom"/><br/>
-                3. Adresse mail : <input type="email" name="identite" placeholder="Adresse mail"/><br/>
-            </div>
-        </p> 
-        <!--Partie violette-->
-        <p>
-            <span id="adressedelivraison">Adresse de livraison</span>
-            <div class="partieviolette">
-                1. Adresse : <textarea name="adresse" rows="5" cols="15"></textarea><br/>
-                2. Code postal : <input type="text" name="adresse" placeholder="Code Postal"/><br/>
-                3. Ville : <input type="text" name="adresse" placeholder="Ville"/><br/>
-            </div>
-        </p>
-        <!--Partie rose-->
-        <p>
-            <span id="infodereglement">Informations de réglement</span>
-            <div class="partierose">
-                1. Type de carte bancaire :<br/>
-                <input type="radio" name="carte" value="visa" class="visa"/><label for="visa">VISA</label><br/>
-                <input type="radio" name="carte" value="mastercard" class="mastercard"/><label for="mastercard">Mastercard</label><br/>
-                2. Numéro de carte : <input type="text" name="carte" placeholder="Numéro de carte"/><br/>
-                3. Code de sécurité : <input type="text" name="carte" placeholder="Code de sécurité"/><br/>
-                4. Nom du titulaire : <input type="text" name="carte" placeholder="Nom du titulaire"/><br/>
-            </div>
-        </p>
-        <!--Bouton d'achat-->
-        <p>
-            <input type="submit" class="bouton" value="J'achète!"/>
-        </p>
+        <form action=# method=post>
+                <!--Partie bleue-->
+            <fieldset class=PartieBleue>
+                <legend id="VotreIdentite">Votre identité</legend>
+                <div>
+                    <label for=Nom>1. Nom : </label><input type="text" name="nom" placeholder="Nom"/>
+                    <label for=Prénom>2. Prénom : </label><input type="text" name="prénom" placeholder="Prénom"/>
+                    <label for=Mail>3. Adresse mail : </label><input type="email" name="mail" placeholder="Adresse mail"/>
+                </div>
+            </fieldset>
+                <!--Partie violette-->
+            <fieldset class=PartieViolette>
+                <legend id="AdresseDeLivraison">Adresse de livraison</legend>
+                <div>
+                    <label for=Adresse>1. Adresse : </label><textarea name="adresse" rows="5" cols="15"></textarea>
+                    <label for=CodePostal>2. Code postal : </label><input type="text" name="CodePostal" placeholder="Code Postal"/>
+                    <label for=Ville>3. Ville : </label><input type="text" name="ville" placeholder="Ville"/>
+                </div>
+            </fieldset>
+                <!--Partie rose-->
+            <fieldset class=PartieRose>
+                <legend id="InfoReglement">Informations de réglement</legend>
+                <div>
+                    <label for=CarteBancaire>1. Type de carte bancaire :</label>
+                    <input type="radio" name="carte" value="visa" class="visa"/><label for="visa" class="TypeCarte">VISA</label>
+                    <input type="radio" name="carte" value="mastercard" class="mastercard"/><label for="mastercard" class="TypeCarte">Mastercard</label>
+                    <label for=NumeroCarte>2. Numéro de carte : </label><input type="text" name="NumeroCarte" placeholder="Numéro de carte"/>
+                    <label for=CodeSecurite>3. Code de sécurité : </label><input type="text" name="CodeSecurite" placeholder="Code de sécurité"/>
+                    <label for=NomTitulaire>4. Nom du titulaire : </label><input type="text" name="NomTitulaire" placeholder="Nom du titulaire"/>
+                </div>
+            </fieldset>
+            <!--Bouton d'achat-->
+                <input type="submit" value="J'achète!"/>
+        </form>
     </body>
 </html>
